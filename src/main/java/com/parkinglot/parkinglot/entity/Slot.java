@@ -1,4 +1,16 @@
 package com.parkinglot.parkinglot.entity;
 
-public class Slot {
+import lombok.*;
+
+import javax.persistence.Entity;
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString()
+@Entity
+public class Slot extends BaseEntity {
+    String name;
 }
